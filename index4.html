@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Parallax Content Slider with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+		</noscript>
+    </head>
+    <body>
+        <div class="container">
+			<header>
+				<h1>NEW JOURNEY OF <span>MY LIFE (DECEMBER 10TH,2017)</span></h1>
+				<h2>Life is not always a burden or a responsibility. These cute life quotes show how a bit of optimism and humor can make your living better.</h2>
+				<p class="codrops-demos">
+					<a class="current-demo" href="index.html">Default</a>
+					<a href="index2.html">Autoplay</a>
+					<a href="index3.html">Parallax off</a>
+				</p>
+				<p>
+					<a id="testSlide3" href="#">gotoSlide3</a>
+				</p>	
+			</header>
+			<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>ART</h2>
+					<p>Life is the art of drawing without an eraser. </p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/6.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>LIFE IS MIXUTE OF GOOD AD BAD</h2>
+					<p>Life is like an onion: You peel it off one layer at a time, and sometimes you weep.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/7.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>SOME SITUATIONS OF LIFE</h2>
+					<p>You can close your eyes to things you don't want to see, but you can't close your heart to the things you don't want to feel. </p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/8.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>GOD CREATION</h2>
+					<p>Sure God created man before woman. But then you always make a rough draft before the final masterpiece.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/9.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>DRESSINGS</h2>
+					<p>I love dressing up. It's the best part of being a girl, I think.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/10.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>FREEDOM</h2>
+					<p>DON'T BOUND ANY ONE IN STUPID THINGS..THE PERSON WHO LOVES YOU CAN ACCEPT THE GOOD AND BAD THINGS IN YOU AND WHO DON'T LOVE YOU WILL ALWAYS BOUND YOU.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/11.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>WANT</h2>
+					<p>Lots of people want to ride with you in the limo, but what you want is someone who will take the bus with you when the limo breaks down.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/12.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>DREAMS</h2>
+					<p>Do not lose hold of your dreams or aspirations. For if you do, you may still exist but you have ceased to live.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/13.jpg" alt="image01" /></div>
+				</div>
+				
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				var $slider	= $('#da-slider');
+				
+				// initialize the slider
+				$slider.cslider();
+				
+				// example how to go to page 3 when clicking on a link
+				$('#testSlide3').on( 'click', function( event ) {
+				
+					$('#da-slider').cslider( 'page', 2 );
+					return false;
+				
+				} );
+			
+			});
+		</script>	
+    </body>
+</html>

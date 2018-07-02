@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+         <title>Parallax Content Slider with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+		</noscript>
+    </head>
+    <body>
+        <div class="container">
+			
+			<header>
+				<h1>NEW JOURNEY OF <span>MY LIFE (DECEMBER 10TH,2017)</span></h1>
+				<h2>"Shine like the whole universe is yours." </h2>
+				<p class="codrops-demos">
+					<a href="index.html">Default</a>
+					<a href="index2.html">Autoplay</a>
+					<a class="current-demo" href="index3.html">Parallax off</a>
+				</p>
+			</header>
+			<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>LIFE</h2>
+					<p>“Life is short, and it is up to you to make it sweet.”</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/13.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>LIVE EVERYTHING ON GOD</h2>
+					<p>"You don’t always need a plan. Sometimes you just need to breathe, let go and see what happens."</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/12.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>YOURSELF</h2>
+					<p>"Make yourself a priority. At the end of the day, you’re your longest commitment." </p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/11.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>PRINCESS OF MY FATHER</h2>
+					<p>"The most beautiful girls wear their hearts on their sleeves and their souls in their smiles"</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/10.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>lOVE</h2>
+					<p>"Imagine we obsessed about the things we love about ourselves."</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/9.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>STAR</h2>
+					<p>""Remember, for everything you have lost, you have gained something else. Without the dark, you would never see the stars."</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/8.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>NEVER GAVE UP</h2>
+					<p>"Soon, when all is well, you’re going to look back on this period of your life and be so glad that you never gave up."</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/7.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>SHINE</h2>
+					<p>"Stars can't shine without darkness."</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/6.jpg" alt="image01" /></div>
+				</div>
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					bgincrement	: 0
+				});
+			
+			});
+		</script>	
+    </body>
+</html>

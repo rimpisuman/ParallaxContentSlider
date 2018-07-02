@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+         <title>Parallax Content Slider with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+		</noscript>
+    </head>
+    <body>
+        <div class="container">
+				<header>
+				<h1>NEW JOURNEY OF <span>MY LIFE (DECEMBER 10TH,2017)</span></h1>
+                <h2>"Sometimes you have to stop thinking so much and go where your heart takes you." </h2>
+				<p class="codrops-demos">
+					<a href="index.html">Default</a>
+					<a class="current-demo" href="index2.html">Autoplay</a>
+					<a href="index3.html">Parallax off</a>
+				</p>
+			</header>
+			<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>LOVE</h2>
+					<p>Love is a really scary thing, and you never know what's going to happen. It's one of the most beautiful things in life, but it's one of the most terrifying. It's worth the fear because you have more knowledge, experience, you learn from people, and you have memories.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/6.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>OLD FRIENDS</h2>
+					<p>I love coming back home and seeing old friends and family. I would say it keeps me grounded.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/9.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>FOCUS</h2>
+					<p>"Keep your eyes on the stars and your feet on the ground."</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/7.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>LIFE</h2>
+					<p>“You’re only here for a short visit. Don’t hurry, don’t worry. And be sure to smell the flowers along the way.”.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="image/13.jpg" alt="image01" /></div>
+				</div>
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>	
+    </body>
+</html>
